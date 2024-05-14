@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seatwork 2</title>
+<style type="text/css">
+	body{
+		font-family: Arial;
+		background-color: #ffeecc;
+	}
+	a{
+		margin-left: 20px;
+		margin-right: 20px;
+		background-color: rosybrown;
+	}
+	kbd{
+		font-size: 50px;
+	}
+	h1{
+		font-family: Arial;
+	}
+	#multi{
+		background-color: lightgoldenrodyellow;
+	}
+	#div{
+		background-color: lightyellow;
+	}
+	#subtract{
+		background-color: lightyellow;
+	}
+	#add{
+		background-color: lightgoldenrodyellow;
+	}
+	#bun{
+		height: 150px;
+		width: 150px;
+		align-content: center;
+	}
+</style>
+</head>
+<body>
+<center><h1>Hi! <3 here's some <kbd>Math</kbd> for you!</h1><img src="calcu.jpg" align="center" id="bun"></center>
+<center>
+
+<form>
+<input type="text" placeholder="Enter the first number." id="id1">
+<br>
+<input type="text" placeholder="Enter the second number." id="id2">
+<br>
+</p>
+<input id="multi" type="submit" value="Multiplication"
+onclick="multiplication()">
+<input id="div" type="submit" value="Division" onclick="division()">
+<input id="subtr" type="submit" value="Subtraction"
+onclick="subtraction()">
+<input id="add"type="submit" value="Addition" onclick="addition()">
+</form>
+</center>
+<script>
+function multiplication() {
+num1 = document.getElementById("id1").value;
+num2 = document.getElementById("id2").value;
+product = num1 * num2;
+window.alert(product)!;
+}
+function division() {
+num1 = document.getElementById("id1").value;
+num2 = document.getElementById("id2").value;
+quotient = num1 / num2;
+window.alert(quotient)!;
+}
+function subtraction() {
+num1 = document.getElementById("id1").value;
+num2 = document.getElementById("id2").value;
+documentdifference = num1 - num2;
+window.alert(difference)!;
+}
+function addition() {
+num1 = Number(document.getElementById("id1").value);
+num2 = Number(document.getElementById("id2").value);
+sum = num1 + num2;
+window.alert(sum)!;
+}
+</script>
+</body>
+</body>
+</html>
